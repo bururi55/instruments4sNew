@@ -1,0 +1,29 @@
+/*строка*/
+.stroka {
+  color: white;
+  font-size: 0.8em;
+  position: fixed;
+  left: 0px;
+  bottom: 2px;
+  margin-bottom: 0;
+}
+
+/* связь */
+.svyaz {
+  color: white;
+  font-size: 0.9em;
+  position: fixed;
+  left: 10px;
+  bottom: 20px;
+  margin-bottom: 20px;
+}
+
+/*версия*/
+.versia {
+  color: white;
+  font-size: 0.8em;
+  position: fixed;
+  left: 5px;
+  bottom: 15px;
+  margin-bottom: 5px;
+}
