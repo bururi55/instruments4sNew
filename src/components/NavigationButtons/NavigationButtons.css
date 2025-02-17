@@ -1,6 +1,6 @@
 /* Код внешки кнопок перехода */
 .navigation-buttons {
-  margin-top: 60px; /* Увеличиваем отступ сверху, чтобы кнопки были ниже гирлянды */
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -15,13 +15,13 @@ a.bott {
   padding: 10px 15px;
   margin: 10px auto;
   color: #ccc;
-  background-color: #103200;
+  background-color: #b23344;
   background-image: linear-gradient(top, #103200 0%, #103200 100%);
   background-image: -webkit-gradient(
     linear,
     left top,
     left bottom,
-    color-stop(0, #103200),
+    color-stop(0, #b23344),
     color-stop(1, #103200)
   );
   background-image: -moz-linear-gradient(top, #103200 0%, #103200 100%);

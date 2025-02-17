@@ -1,6 +1,32 @@
 import React from "react";
-import "./Snowflakes.css"; // Импортируем CSS файл
+import "./Snowflakes.css";
 
+const FloatingHearts = () => {
+  return (
+    <div className="chaotic-hearts-container">
+      <div className="heart heart1"></div>
+      <div className="heart heart2"></div>
+      <div className="heart heart3"></div>
+      <div className="heart heart4"></div>
+      <div className="heart heart5"></div>
+      <div className="heart heart6"></div>
+      <div className="heart heart7"></div>
+      <div className="heart heart8"></div>
+      <div className="heart heart9"></div>
+      <div className="heart heart10"></div>
+      <div className="heart heart11"></div>
+      <div className="heart heart12"></div>
+      <div className="heart heart13"></div>
+      <div className="heart heart14"></div>
+      <div className="heart heart15"></div>
+      <div className="heart heart16"></div>
+    </div>
+  );
+};
+
+export default FloatingHearts;
+
+/* капли дождя
 const Snowflakes = () => {
   return (
     <div className="raindrops">

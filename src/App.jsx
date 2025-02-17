@@ -1,5 +1,5 @@
 import React from "react";
-import Snowflakes from "./components/Snowflakes/Snowflakes";
+import FloatingHearts from "./components/Snowflakes/Snowflakes";
 import Garland from "./components/Garland/Garland";
 import NavigationButtons from "./components/NavigationButtons/NavigationButtons";
 import Ticker from "./components/Ticker/Ticker";
@@ -10,7 +10,7 @@ import "./App.css"; // Импортируем общие стили
 const App = () => {
   return (
     <div className="app">
-      <Snowflakes />
+      <FloatingHearts />
       <Garland />
       <center>
         <NavigationButtons />

@@ -1,14 +1,10 @@
 import React from "react";
-import "./Garland.css"; // Импортируем CSS файл
+import "./Garland.css"; //
 
 const Garland = () => {
   return (
     <div className="garland">
-      <div className="twig twig-top"></div>
-      <div className="twig twig-bottom"></div>
-
-      <div className="basket"></div>
-      <div className="basket"></div>
+      <div className="stich"></div>
     </div>
   );
 };

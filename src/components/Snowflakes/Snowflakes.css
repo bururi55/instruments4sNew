@@ -1,12 +1,407 @@
-//капли дождя
-/* Стили для капель дождя */
-.raindrops {
-  position: fixed; /* Используем fixed, чтобы контейнер не изменял размеры страницы */
+//cердечки
+
+.chaotic-hearts-container {
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100vw; /* Используем vw для ширины, чтобы контейнер занимал всю ширину окна */
-  height: 100vh; /* Используем vh для высоты, чтобы контейнер занимал всю высоту окна */
-  overflow: hidden; /* Предотвращаем изменение размеров страницы */
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.heart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: red;
+  transform: rotate(45deg);
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -10px;
+  left: 0;
+}
+
+.heart::after {
+  left: 10px;
+  top: 0;
+}
+
+/* Анимации для сердечек слева */
+@keyframes float1 {
+  0% {
+    transform: translate(-50vw, 50vh) rotate(45deg);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(0, 50vh) rotate(45deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(100vw, -50vh) rotate(45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(100vw, -50vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes float2 {
+  0% {
+    transform: translate(-50vw, 50vh) rotate(45deg);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(0, 50vh) rotate(45deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(100vw, 50vh) rotate(45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(100vw, 50vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes float3 {
+  0% {
+    transform: translate(-50vw, 50vh) rotate(45deg);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(0, 50vh) rotate(45deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(100vw, -100vh) rotate(45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(100vw, -100vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes float4 {
+  0% {
+    transform: translate(-50vw, 50vh) rotate(45deg);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(0, 50vh) rotate(45deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(100vw, 100vh) rotate(45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(100vw, 100vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes float5 {
+  0% {
+    transform: translate(-50vw, 50vh) rotate(45deg);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(0, 50vh) rotate(45deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(100vw, -75vh) rotate(45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(100vw, -75vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes float6 {
+  0% {
+    transform: translate(-50vw, 50vh) rotate(45deg);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(0, 50vh) rotate(45deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(100vw, 75vh) rotate(45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(100vw, 75vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes float7 {
+  0% {
+    transform: translate(-50vw, 50vh) rotate(45deg);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(0, 50vh) rotate(45deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(100vw, -100vh) rotate(45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(100vw, -100vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes float8 {
+  0% {
+    transform: translate(-50vw, 50vh) rotate(45deg);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(0, 50vh) rotate(45deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(100vw, 100vh) rotate(45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(100vw, 100vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+/* Анимации для сердечек справа */
+@keyframes float9 {
+  0% {
+    transform: translate(150vw, 50vh) rotate(45deg);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(100vw, 50vh) rotate(45deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(0, -50vh) rotate(45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, -50vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes float10 {
+  0% {
+    transform: translate(150vw, 50vh) rotate(45deg);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(100vw, 50vh) rotate(45deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(0, 50vh) rotate(45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 50vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes float11 {
+  0% {
+    transform: translate(150vw, 50vh) rotate(45deg);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(100vw, 50vh) rotate(45deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(0, -100vh) rotate(45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, -100vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes float12 {
+  0% {
+    transform: translate(150vw, 50vh) rotate(45deg);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(100vw, 50vh) rotate(45deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(0, 100vh) rotate(45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 100vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes float13 {
+  0% {
+    transform: translate(150vw, 50vh) rotate(45deg);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(100vw, 50vh) rotate(45deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(0, -75vh) rotate(45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, -75vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes float14 {
+  0% {
+    transform: translate(150vw, 50vh) rotate(45deg);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(100vw, 50vh) rotate(45deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(0, 75vh) rotate(45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 75vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes float15 {
+  0% {
+    transform: translate(150vw, 50vh) rotate(45deg);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(100vw, 50vh) rotate(45deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(0, -100vh) rotate(45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, -100vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes float16 {
+  0% {
+    transform: translate(150vw, 50vh) rotate(45deg);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(100vw, 50vh) rotate(45deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(0, 100vh) rotate(45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 100vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+.heart1 {
+  animation: float1 10s infinite linear;
+}
+.heart2 {
+  animation: float2 12s infinite linear;
+}
+.heart3 {
+  animation: float3 8s infinite linear;
+}
+.heart4 {
+  animation: float4 14s infinite linear;
+}
+.heart5 {
+  animation: float5 9s infinite linear;
+}
+.heart6 {
+  animation: float6 11s infinite linear;
+}
+.heart7 {
+  animation: float7 7s infinite linear;
+}
+.heart8 {
+  animation: float8 13s infinite linear;
+}
+
+.heart9 {
+  animation: float9 10s infinite linear;
+}
+.heart10 {
+  animation: float10 12s infinite linear;
+}
+.heart11 {
+  animation: float11 8s infinite linear;
+}
+.heart12 {
+  animation: float12 14s infinite linear;
+}
+.heart13 {
+  animation: float13 9s infinite linear;
+}
+.heart14 {
+  animation: float14 11s infinite linear;
+}
+.heart15 {
+  animation: float15 7s infinite linear;
+}
+.heart16 {
+  animation: float16 13s infinite linear;
+}
+
+/* Стили для капель дождя 
+.raindrops {
+  position: fixed; /* Используем fixed, чтобы контейнер не изменял размеры страницы 
+  top: 0;
+  left: 0;
+  width: 100vw; /* Используем vw для ширины, чтобы контейнер занимал всю ширину окна 
+  height: 100vh; /* Используем vh для высоты, чтобы контейнер занимал всю высоту окна 
+  overflow: hidden; /* Предотвращаем изменение размеров страницы 
   pointer-events: none;
   z-index: 1;
 }
