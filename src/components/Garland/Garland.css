@@ -10,51 +10,24 @@
 
 .twig {
   position: absolute;
-  width: 150px;
-  height: 150px;
-  background-image: url("../../assets/verba1.png");
+  width: 550px;
+  height: 350px;
+  background-image: url();
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .twig-top {
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%) rotate(45deg);
+  top: -20px;
+  left: 50px;
+  transform: translateX(-50%) rotate(51deg);
 }
 
 .twig-bottom {
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%) rotate(-45deg);
-}
-
-.twig-big1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw; /* Растягиваем на всю ширину экрана */
-  height: auto; /* Автоматически подстраиваем высоту под изображение */
-  background-image: url("../../assets/verbaBIG.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: -1;
-  transform: translateX(-0%) rotate(-90deg);
-}
-
-.twig-big2 {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  background-image: url("../../assets/verbaBIG.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%) rotate(-45deg);
+  top: -20px;
+  left: 50px;
+  transform: translateX(-50%) rotate(51deg);
 }
 
 .basket {

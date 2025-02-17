@@ -1,4 +1,9 @@
 /* Код внешки кнопок перехода */
+.navigation-buttons {
+  margin-top: 60px; /* Увеличиваем отступ сверху, чтобы кнопки были ниже гирлянды */
+  text-align: center;
+}
+
 a.bott {
   display: inline-block;
   font-size: 1.1em;

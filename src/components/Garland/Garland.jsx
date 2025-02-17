@@ -6,8 +6,7 @@ const Garland = () => {
     <div className="garland">
       <div className="twig twig-top"></div>
       <div className="twig twig-bottom"></div>
-      <div className="twig twig-big1"></div>
-      <div className="twig twig-big2"></div>
+
       <div className="basket"></div>
       <div className="basket"></div>
     </div>
