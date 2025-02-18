@@ -4,7 +4,7 @@ html {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-image: url("./assets/fonspring.jpg");
+  background-image: url("/src/assets/fonspring.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;

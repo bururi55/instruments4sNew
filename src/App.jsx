@@ -5,7 +5,7 @@ import NavigationButtons from "./components/NavigationButtons/NavigationButtons"
 import Ticker from "./components/Ticker/Ticker";
 import CopyButtons from "./components/CopyButtons/CopyButtons";
 import CopyButtons2 from "./components/CopyButtons/CopyButtons2";
-import "./App.css"; // Импортируем общие стили
+import "./App.css";
 
 const App = () => {
   return (

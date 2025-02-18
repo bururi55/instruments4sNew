@@ -119,7 +119,7 @@ const CopyButtons = () => {
           в чат супервайзеров: https://t.me/supervisor_support_bot
         </div>
         <div style={{ fontSize: 0 }} id="t15">
-          За период 13.01-19.01 у тебя ХХ часов. Ошибок в расчёте нет. Оплату
+          За период 03.02-09.02 у тебя ХХ часов. Ошибок в расчёте нет. Оплату
           направили верно
         </div>
         <button onClick={() => copyText("#t13")} className="copy-button">

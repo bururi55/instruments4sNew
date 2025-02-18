@@ -1,4 +1,4 @@
-//cердечки
+/*cердечки*/
 
 .chaotic-hearts-container {
   position: fixed;
@@ -345,53 +345,53 @@
 }
 
 .heart1 {
-  animation: float1 10s infinite linear;
+  animation: float1 19s infinite linear;
 }
 .heart2 {
-  animation: float2 12s infinite linear;
+  animation: float2 20s infinite linear;
 }
 .heart3 {
-  animation: float3 8s infinite linear;
+  animation: float3 19s infinite linear;
 }
 .heart4 {
-  animation: float4 14s infinite linear;
+  animation: float4 19s infinite linear;
 }
 .heart5 {
-  animation: float5 9s infinite linear;
+  animation: float5 22s infinite linear;
 }
 .heart6 {
-  animation: float6 11s infinite linear;
+  animation: float6 21s infinite linear;
 }
 .heart7 {
-  animation: float7 7s infinite linear;
+  animation: float7 19s infinite linear;
 }
 .heart8 {
-  animation: float8 13s infinite linear;
+  animation: float8 19s infinite linear;
 }
 
 .heart9 {
-  animation: float9 10s infinite linear;
+  animation: float9 20s infinite linear;
 }
 .heart10 {
-  animation: float10 12s infinite linear;
+  animation: float10 19s infinite linear;
 }
 .heart11 {
-  animation: float11 8s infinite linear;
+  animation: float11 18s infinite linear;
 }
 .heart12 {
-  animation: float12 14s infinite linear;
+  animation: float12 19s infinite linear;
 }
 .heart13 {
-  animation: float13 9s infinite linear;
+  animation: float13 20s infinite linear;
 }
 .heart14 {
-  animation: float14 11s infinite linear;
+  animation: float14 21s infinite linear;
 }
 .heart15 {
-  animation: float15 7s infinite linear;
+  animation: float15 19s infinite linear;
 }
 .heart16 {
-  animation: float16 13s infinite linear;
+  animation: float16 23s infinite linear;
 }
 
 /* Стили для капель дождя 
